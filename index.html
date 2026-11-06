@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09050d">
+  <title>Dulce Boss | Sweetness With a Little Heat</title>
+  <style>
+    :root{--pink:#ff25b8;--orange:#ff9b20;--ink:#09050d;--cream:#fff5fb}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--ink);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+    a{color:inherit}
+    .wrap{width:min(1080px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:#09050deF;border-bottom:1px solid #ffffff20;backdrop-filter:blur(12px)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px}
+    .brand{font-weight:1000;letter-spacing:1px;color:var(--pink);font-size:1.25rem;text-decoration:none}
+    .navlinks{display:flex;gap:20px;font-size:.92rem}
+    .navlinks a{text-decoration:none;color:#f8dff1}
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:32px;padding:64px 0 58px}
+    .eyebrow{color:var(--orange);font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:.78rem}
+    h1{font-size:clamp(3rem,8vw,5.8rem);line-height:.9;margin:14px 0 18px;font-weight:1000;letter-spacing:-3px}
+    h1 span{color:var(--pink);text-shadow:0 0 28px #ff25b855}
+    .hero p{color:#e5cddd;line-height:1.65;max-width:490px}
+    .btn{display:inline-block;background:linear-gradient(110deg,var(--pink),#ff6a64,var(--orange));color:#170612;text-decoration:none;font-weight:900;padding:14px 21px;border-radius:999px;margin-top:12px}
+    .logo{width:min(100%,430px);display:block;margin:auto;border-radius:50%;filter:drop-shadow(0 0 35px #ff25b833)}
+    section{padding:52px 0}
+    .section-head{text-align:center;margin-bottom:28px}
+    h2{font-size:clamp(2rem,5vw,3rem);margin:0 0 9px}
+    .section-head p{color:#cdb8c8;margin:0}
+    .menu{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .item{background:linear-gradient(145deg,#211020,#130b18);border:1px solid #ff5bc533;border-radius:20px;padding:22px}
+    .emoji{font-size:2rem}
+    .item h3{margin:12px 0 6px}
+    .item p{color:#cdb8c8;line-height:1.45;min-height:42px;font-size:.92rem}
+    .price{font-weight:1000;color:var(--orange);font-size:1.2rem}
+    .about{background:linear-gradient(120deg,#240d25,#17101d);border-block:1px solid #ff5bc522}
+    .about-inner{max-width:760px;margin:auto;text-align:center}
+    .notice{margin:28px auto 0;max-width:760px;padding:16px;border:1px solid #ffb04a55;border-radius:14px;color:#f4d9bd;font-size:.88rem;line-height:1.5}
+    footer{text-align:center;padding:30px 0 42px;color:#bda9b9;font-size:.85rem}
+    @media(max-width:720px){.hero{grid-template-columns:1fr;text-align:center;padding:42px 0}.hero p{margin-inline:auto}.logo{max-width:300px;grid-row:1}.menu{grid-template-columns:1fr 1fr}.navlinks{gap:12px;font-size:.82rem}}
+    @media(max-width:440px){.menu{grid-template-columns:1fr}.navlinks{gap:9px;font-size:.76rem}.brand{font-size:1rem}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="#">👑 DULCE BOSS</a>
+    <div class="navlinks"><a href="#menu">Menu</a><a href="#about">Our vibe</a><a href="#contact">Contact</a></div>
+  </nav>
+</header>
+<main>
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow">Sweetness with a little heat</div>
+      <h1>SNACK<br><span>LIKE A BOSS.</span></h1>
+      <p>Big candy energy, sweet-and-spicy flavor, and gummy favorites. Welcome to Dulce Boss!</p>
+      <a class="btn" href="#menu">CHECK THE MENU ↓</a>
+    </div>
+    <img class="logo" src="dulce-boss-logo.png" alt="Dulce Boss candy logo">
+  </div>
+  <section id="menu">
+    <div class="wrap">
+      <div class="section-head"><h2>THE BOSS MENU</h2><p>Pick your sweet, sour, or spicy favorite.</p></div>
+      <div class="menu">
+        <article class="item"><div class="emoji">🍬</div><h3>Chamoy Gummies</h3><p>Gummy candy with a sweet-and-tangy chamoy kick.</p><div class="price">$3</div></article>
+        <article class="item"><div class="emoji">🍉</div><h3>Watermelon Rings</h3><p>Chewy watermelon candy with a sour twist.</p><div class="price">$3</div></article>
+        <article class="item"><div class="emoji">🍭</div><h3>Sour Gummy Mix</h3><p>A colorful mix for serious sour-candy fans.</p><div class="price">$2</div></article>
+        <article class="item"><div class="emoji">🥭</div><h3>Mango Chamoy Cup</h3><p>Mango-inspired candy with a tangy chamoy flavor.</p><div class="price">$4</div></article>
+        <article class="item"><div class="emoji">👑</div><h3>Boss Mix Cup</h3><p>A little bit of everything in one boss-level cup.</p><div class="price">$5</div></article>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="wrap about-inner">
+      <div class="eyebrow">Small business. Big flavor.</div>
+      <h2>WELCOME TO THE BOSS SIDE</h2>
+      <p>Dulce Boss is a mini candy brand made for people who love gummies, bold flavors, and a little chamoy heat. Thanks for supporting a young entrepreneur!</p>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="wrap section-head">
+      <h2>WANT TO ORDER?</h2>
+      <p>Ask a parent or guardian to help with orders and pickup details.</p>
+      <div class="notice">Menu and prices are examples and may change. Ask a parent or guardian to supervise sales, check food-allergy information, use safe food handling, and confirm local rules before selling food. This page does not collect personal information or take payments.</div>
+    </div>
+  </section>
+</main>
+<footer>© Dulce Boss · Sweetness with a little heat 🌶️</footer>
+</body>
+</html>
